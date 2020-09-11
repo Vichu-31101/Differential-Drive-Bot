@@ -23,6 +23,7 @@ path = []
 # Set value as True for HSV setter
 hsvBounds = HSVBounds(False)
 kalmanFilter = KalmanFilter()
+# Setting velMax and angleMax
 driveBot = DriveBot(1.7, 0.5)
 
 
