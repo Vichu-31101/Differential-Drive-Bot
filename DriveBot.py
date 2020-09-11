@@ -44,14 +44,13 @@ class DriveBot:
 
     def Plant(self, angleInput, distanceInput):
         # Updating angle
-        plantAngleVar = 1
+        plantAngleVar = 0.8
         delAngle = angleInput * plantAngleVar
         delAngle = min(abs(delAngle), self.angleMax) * np.sign(delAngle)
         self.angle += delAngle
         # Updating velocity
         plantVelVar = 0.05
         delVelocity = distanceInput * plantVelVar
-        print(delVelocity)
         delVelocity = min(abs(delVelocity), self.velMax) * np.sign(delVelocity)
         self.vel = delVelocity
         # Updating position
